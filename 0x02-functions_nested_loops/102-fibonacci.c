@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
  * main - prints out first 50
- * fibanacci suit numbers
+ * fibonacci suit numbers
  * Return: return 0
  */
 int main(void)
 {
 int inc;
-insigned long n1 = 0, n2 = 1, n3;
+unsigned long n1 = 0, n2 = 1, n3;
 for (inc = 0; inc < 50; inc++)
 {
 n3 = n1 + n2;

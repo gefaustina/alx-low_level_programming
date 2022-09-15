@@ -3,7 +3,7 @@
 
 /**
  * main - header file for prototypes
- * void prottypes (void)
+ * void prototypes (void)
  * int prototypes (int)
  */
 

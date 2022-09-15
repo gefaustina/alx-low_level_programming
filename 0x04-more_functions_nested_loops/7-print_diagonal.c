@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-*print_diagona - prints a diagonal
+*print_diagonal - prints a diagonal
 *@n: parameter
 *Return: returns nothing
 */
@@ -29,5 +29,5 @@ void print_diagonal(int n)
 			putchar('\n');
 		}
 	}
-	putchar(n'\n');
+	putchar('\n');
 }

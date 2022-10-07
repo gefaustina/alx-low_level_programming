@@ -49,6 +49,12 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 		addrem = add / 10;
 		dest[k] = add % 10 + '0';
 	}
+	for (addrem += mulrem; k >= 0 && addrem; k--)
+	{
+		add = (dest[k] - '0') + addrem;
+		addrem = add / 10;
+		dest[k] = add % 10 + '0';
+	}
 	if (addrem)
 	{
 		return (NULL);
@@ -106,8 +112,8 @@ int main(int argc, char *argv[])
 	char *t;
 	char e[] = "Error\n";
 
-if (argc != 3 || check_for_digits(argv))
-{
+	if (argc != 3 || check_for_digits(argv))
+	{
 		for (ti = 0; e[ti]; ti++)
 			_putchar(e[ti]);
 		exit(98);
